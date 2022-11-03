@@ -1,6 +1,8 @@
 #include<stdio.h>
 // quadrant search
 int main(){
+    srand(time(null));
+    int random=rand()%10
     int x,y;
     printf("Enter coordinates: ");
     scanf("%d%d",&x,&y);

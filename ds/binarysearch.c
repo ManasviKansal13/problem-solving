@@ -6,7 +6,7 @@ int binarySearch(int A[],int start,int end,int x){
        return mid;
      if (A[mid]>x) 
        return binarySearch(A, start, mid-1, x);
-     return binarySearch(A, mid+1,end, x);
+     return binarySearch(A, mid+1,end, x);  
    }
    return -1;
 }

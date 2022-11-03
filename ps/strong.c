@@ -1,0 +1,1 @@
+//digits ke factorial k sum

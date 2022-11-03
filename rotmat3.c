@@ -1,0 +1,3 @@
+//rotaion of matrix to 180 clockwise... 
+//transpose
+//rows ko reverse krna hai

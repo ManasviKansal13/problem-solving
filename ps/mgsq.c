@@ -1,8 +1,8 @@
 #include<stdio.h>
-int main(int tc, int tr, int r,int c,int A[r][c],int n){
+int main(int tc, int tr, int r[],int c[],int A[r][c],int n){
     r[100]={0};
     c[100]={0};
-    r=[0],c=[2],n=1;
+    r[0],c[2],n=1;
     A[0][2]=1;
     while (n!=25)
     {
