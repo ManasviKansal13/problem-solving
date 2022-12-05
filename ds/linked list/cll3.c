@@ -1,0 +1,1 @@
+//series having sum of all nodes except the current node

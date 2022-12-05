@@ -1,0 +1,61 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+#define STACKSIZE 10
+struct stack{
+    int item[10];
+    int top;
+};
+void initialize(struct stack *s){
+    s->top=-1;
+}
+void push(struct stack *s,int x){
+    if(s->top==STACKSIZE-1){
+        printf("\n STACK OVERFLOWS");
+        exit(1);
+    }
+    s->top=s->top+1;
+    s->top[s->item]=x;
+}
+int pop(struct stack *s){
+    int x;
+    if(s->top==-1){
+       printf("\n STACK UNDERFLOWS");
+       exit(1); 
+    }
+    x=s->top[s->item];
+    s->top=s->top-1;
+    return x;
+}
+int stacktop(struct stack *s){
+    int x;
+    x=s->top[s->item];
+    return x;
+}
+
+int main(){
+    struct stack fs;
+    int a;
+    initialize(&fs);
+    push(&fs,100);
+    push(&fs,200);
+    push(&fs,300);
+    /* 
+    push(400);
+    push(500);
+    push(600);
+    push(700);
+    push(800);
+    push(900);
+    push(1000);
+    push(1200);
+    push(1300);
+    */
+    a=pop(&fs);
+    printf("The popped element is %d", a);
+    a=pop(&fs);
+    printf("\nThe popped element is %d", a);
+    a=stacktop(&fs); 
+    printf("\nThe popped element is %d", a);    
+    return 0;
+}

@@ -1,0 +1,1 @@
+// series having no fibonacci number
